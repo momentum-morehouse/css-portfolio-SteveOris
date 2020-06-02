@@ -45,7 +45,7 @@ header {
   height: 300px;
   width: 400px;
   margin-left: 0px;
-  display: flex;
+  
 }
 .bodytext {
 padding: 0px 50px 0px 50px;
@@ -155,3 +155,91 @@ a:hover {
   box-shadow: #84CEEB 0 0 10px;
 
  }
+ /* Resume box */
+
+ .resume {
+   width: 1280px;
+   margin: 70px auto 0;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+ }
+ .resume .box 
+ {
+   position: relative;
+   width: 300px;
+   height: 300px;
+   background: white;
+   margin: 10px;
+   box-sizing: border-box;
+   display: inline-block;
+ }
+ .resume .box .imgBox
+ {
+   position: relative;
+   overflow: hidden;
+   
+ }
+ .resume .box .imgBox img
+ {
+   max-width: 100%;
+   
+   transition: transform 2s;
+ }
+ .resume .box:hover .imgBox img
+ {
+   transform: scale(1.2);
+
+ }
+ .resume .box .details
+ {
+   position: absolute;
+   top: 10px;
+   left: 10px;
+   bottom: 10px;
+   right: 10px;
+   background: rgba(0, 0, 0, .8);
+   transform: scaleY(0);
+   transition: transform .5s;
+
+ }
+ .resume .box:hover .details
+ {
+   transform: scaleY(1);
+
+ }
+ .resume .box .details .content
+ {
+   position: absolute;
+   top: 40%;
+   transform: translateY(-50%);
+   padding: 15px;
+   color: #fff;
+   text-align: center;
+   padding: 40px;
+ }
+ .resume .box .details .content h2
+ {
+   margin: 0;
+   padding: 0;
+   font-size: 20px;
+   color: #84CEEB;
+ }
+ #grambling
+ {
+   height: 220px;
+   width: 220px;
+   margin: 30px 45px 20px ;
+ }
+ #atlantic
+{
+  height: 190px;
+  width: 240px;
+  margin: 50px 30px 50px ;
+}
+#Morehouse 
+{
+  height: 30px;
+  width: 250px;
+  margin: 120px 25px 30px ;
+}
